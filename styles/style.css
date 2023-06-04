@@ -1,9 +1,24 @@
-header {
+body, header, footer {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header, footer {
   position: sticky;
   top: 0;
   background-color: grey;
+}
+
+header {
   padding: 25px;
+}
+
+footer {
+  padding: 10px;
+  display: flex;
+}
+
+#banner {
+  width: 100%;
 }
 
 .menu-item {
@@ -17,13 +32,33 @@ a {
 }
 
 .inline { 
-  display: inline; 
+  display: inline-block; 
 }
 
-.logo {
+.logo, #copyright {
   height: 40px;
   position: absolute;
   right: 5px;
   top: 15px;
 }
 
+.footer-logo, #copyright {
+  height: 30px;
+  padding: 15px
+}
+
+fieldset {
+  font-size: 25;
+  border: solid;
+  border-color: darkgrey;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+legend {
+  text-align:center;
+  padding: 0 20px;
+  font-size: 40px;
+  color: darkgrey;
+}
