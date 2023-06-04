@@ -6,11 +6,15 @@ body {
   margin: 0;
 }
 
+main {
+  min-height: 90vh;
+}
+
 header, footer {
   background-color: grey;
 }
 
-header, footer {
+header {
   position: sticky;
   top: 0;
   background-color: grey;
@@ -20,16 +24,20 @@ header, footer{
   display: flex;
 }
 
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
 #banner {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 
-footer {
-  padding: 0 10px;
-}
-
-a, .dropbtn{
+a, .dropbtn   {
+  text-align: center;
+  display: inline-block;
   text-decoration: none;
   color: lightgrey;
   background-color: transparent;
@@ -40,33 +48,31 @@ a:hover {
   background-color: white;
 }
 
-.container {
-  margin: 0 ;
-}
-
 #banner {
   width: 100%;
 }
 
 .menu-item, .dropbtn {
-  padding: 25px 10px;
+  display: inline-block;
+  padding: 1.9vh;
   text-transform: uppercase;
 }
 
 .logo, #copyright {
-  height: 40px;
+  max-height: 100%;
+  display: block;
   position: absolute;
   right: 5px;
-  top: 10px;
+  top: 0px;
 }
 
 .footer-icon, #copyright {
   height: 30px;
-  padding: 15px 5px;
+  padding: 15px;
 }
 
 #social-media-text {
-  margin-right: 15px;
+  margin: 0 15px;
 }
 
 fieldset {
