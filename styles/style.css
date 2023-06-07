@@ -30,6 +30,15 @@ footer {
   width: 100%;
 }
 
+header nav ul {
+    margin: 0px;
+    padding-left: 0;
+}
+header nav ul li {
+    display: inline-block;
+    line-height: 40px;
+}
+
 #banner {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -97,11 +106,12 @@ legend {
 }
 
 .dropdown-content a:hover {
-  background-color: white;
+  background-color: darkgrey;
 }
 
 .dropdown:hover .dropdown-content, .dropdown-content a {
   display: block;
+  text-align: left;
 }
 
 .dropdown:hover .dropbtn {
@@ -112,6 +122,7 @@ legend {
 .dropbtn {
   border: none;
   font-size: 16px;
+  line-height: 40px;
 }
 
 .dropdown {
