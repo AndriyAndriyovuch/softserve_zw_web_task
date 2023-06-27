@@ -93,6 +93,11 @@ a:hover {
   top: 0px;
 }
 
+.image-content {
+  width: 100%;
+
+}
+
 .footer-icon, #copyright {
   height: 30px;
   padding: 15px;
