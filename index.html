@@ -16,7 +16,30 @@
 </head>
 
 <body>
-  <header id="header"></header>
+  <header id="header">
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html" class="menu-item">Main</a></li>
+        <li><div class="dropdown">
+          <button class="dropbtn">Matches</button>
+          <div class="dropdown-content">
+            <a href="#">Calendar of matches</a>
+            <a href="#">Next game</a>
+            <a href="#">Ratings</a>
+          </div>
+        </div>
+        <li><a href="news.html" class="menu-item">News</a></li>
+        <li><a href="#" class="menu-item">Fans</a></li>
+        <li><a href="#" class="menu-item">Contacts</a></li>
+        <li><a href="#" class="menu-item">Admin</a></li>
+      </ul>
+
+      <a href="#" id="logo">
+        <img src="images/logo/logo.svg" alt="LOGO" id="logo-img">
+      </a>
+
+    </nav>
+  </header>
 
   <div class="background-container">
     <img class="background-img" src="images/background.jpg">
@@ -112,7 +135,27 @@
     </fieldset>
   </main>
 
-  <footer id="footer"></footer>
+  <footer id="footer">
+    <div id="social-media-text">
+      <h3>Find us in social networks:</h3>
+    </div>
+    
+    <div>
+      <a href="https://github.com/AndriyAndriyovuch">
+        <img src="images/logo/github.svg" alt="LOGO" class="footer-icon">
+      </a>
+      <a href="https://gitlab.com/AndriyAndriyovuch">
+        <img src="images/logo/gitlab.svg" alt="LOGO" class="footer-icon">
+      </a>
+      <a href="https://www.linkedin.com/in/andrii-mazurok-34929a224/">
+        <img src="images/logo/linkedin.svg" alt="LOGO" class="footer-icon">
+      </a>
+    </div>
+    
+    <div id="copyright">
+      Lv-647-03.Ruby-ZeroWaste © 2023
+    </div>
+  </footer>
 </body>
 
 </html>

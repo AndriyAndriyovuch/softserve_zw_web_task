@@ -70,9 +70,10 @@ a, .dropbtn   {
   background-color: transparent;
 }
 
-a:hover {
+header nav ul li :hover {
   color: black;
   background-color: white;
+  transition: background-color 500ms
 }
 
 #banner {
@@ -85,12 +86,16 @@ a:hover {
   text-transform: uppercase;
 }
 
-.logo, #copyright {
-  max-height: 100%;
+#logo, #copyright {
+  height: 100%;
   display: block;
   position: absolute;
   right: 5px;
   top: 0px;
+}
+
+#logo-img {
+  height: inherit;
 }
 
 .image-content {
@@ -140,6 +145,7 @@ legend {
 .dropdown:hover .dropbtn {
   color: black;
   background-color: white;
+  transition: background-color 500ms
 }
 
 .dropbtn {
@@ -167,13 +173,26 @@ legend {
   text-decoration: none;
 }
 
-header {
+#menu {
   animation-name: navbar;
-  animation-duration: 10s;
+  animation-duration: 1.5s;
+}
+
+#logo {
+  animation-name: logo-img;
+  animation-duration: 1.5s;
 }
 
 @keyframes navbar {
   
-  from {position: relative; left:-1000px;}
-  to {position: relative; left: 0;}
+  0% {position:relative; left:-2000px;}
+  99% {position:relative; left:-1px;}
+  100% {left:0px;}
+}
+
+@keyframes logo-img {
+  
+  0% {right:-2000px;}
+  99% {right:-1px;}
+  100% {right:0px;}
 }
