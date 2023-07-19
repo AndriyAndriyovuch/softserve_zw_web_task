@@ -12,10 +12,3 @@ function showMenu() {
 
   menu.style.display = visibility;
 };
-
-// function showDropdown() {
-//   if (window.innerWidth < 480) {
-//     const dropContent = document.querySelector("#matches")
-//     dropContent.style.display == 'block'
-//   }
-// }

@@ -155,8 +155,6 @@ legend {
 }
 
 .dropdown:hover .dropbtn {
-  color: black;
-  background-color: white;
   transition: background-color 500ms
 }
 
@@ -195,7 +193,7 @@ legend {
   animation-duration: 1.5s;
 }
 
-/* @keyframes navbar {
+@keyframes navbar {
 
   0% {position:relative; left:-2000px;}
   99% {position:relative; left:-1px;}
@@ -207,7 +205,7 @@ legend {
   0% {right:-2000px;}
   99% {right:-1px;}
   100% {right:0px;}
-} */
+}
 
 @media screen and (max-width: 1024px) {
   body {
@@ -243,6 +241,7 @@ legend {
 
   #logo-img-short {
     display: block;
+    height: 65%;
   }
 
   #footer div {
@@ -287,5 +286,16 @@ legend {
 
   legend {
     font-size: 25px;
+  }
+
+  .dropdown:hover .dropdown-content, .dropdown-content a {
+    position: inherit;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .dropdown:hover .dropbtn {
+    transition: background-color 500ms
   }
 }
