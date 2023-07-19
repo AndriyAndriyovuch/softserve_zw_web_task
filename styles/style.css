@@ -42,6 +42,13 @@ header, footer{
   display: flex;
 }
 
+#burger-menu {
+  display: none;
+  border: none;
+  background-color: grey;
+  padding: 1.2vh;
+}
+
 footer {
   position: relative;
   bottom: 0;
@@ -82,7 +89,7 @@ header nav ul li :hover {
 
 .menu-item, .dropbtn {
   display: inline-block;
-  padding: 1.9vh;
+  padding: 1vh;
   text-transform: uppercase;
 }
 
@@ -96,7 +103,7 @@ header nav ul li :hover {
 }
 
 #logo-img-full, #logo-img-short {
-  height: inherit;
+  height: 50px;
 }
 
 #logo-img-short {
@@ -178,7 +185,7 @@ legend {
   text-decoration: none;
 }
 
-#menu {
+#menu, #burger-menu {
   animation-name: navbar;
   animation-duration: 1.5s;
 }
@@ -189,20 +196,20 @@ legend {
 }
 
 @keyframes navbar {
-  
+
   0% {position:relative; left:-2000px;}
   99% {position:relative; left:-1px;}
   100% {left:0px;}
 }
 
 @keyframes logo-img-full {
-  
+
   0% {right:-2000px;}
   99% {right:-1px;}
   100% {right:0px;}
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   body {
     width: 80%;
   }
@@ -249,8 +256,8 @@ legend {
 }
 
 @media screen and (max-width: 480px) {
-  #logo {
-    display: none;
+  body {
+    width: 100%;
   }
 
   header nav ul li, .dropbtn {
@@ -259,5 +266,26 @@ legend {
     width: 100%;
   }
 
+  #burger-menu {
+    display: block;
+  }
 
+  #logo-img-short {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    height: 30px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  fieldset {
+    font-size: 16px;
+  }
+
+  legend {
+    font-size: 25px;
+  }
 }

@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="styles/style.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="scripts/partials.js"></script>
+  <script src="https://kit.fontawesome.com/cba15fe931.js" crossorigin="anonymous"></script>
+  <script src="scripts/burger.js"></script>
 
   <title>Frozen target</title>
 </head>
@@ -18,8 +19,9 @@
 <body>
   <header id="header">
     <nav>
+      <i id="burger-menu" class="fa-solid fa-bars" onclick="showMenu()"></i>
       <ul id="menu">
-        <li><a href="index.html" class="menu-item">Main</a></li>
+        <li><a href="main.html" class="menu-item">Main</a></li>
         <li><div class="dropdown">
           <button class="dropbtn">Matches</button>
           <div class="dropdown-content">
@@ -140,7 +142,7 @@
     <div id="social-media-text">
       <h3>Find us in social networks:</h3>
     </div>
-    
+
     <div>
       <a href="https://github.com/AndriyAndriyovuch">
         <img src="images/logo/github.svg" alt="LOGO" class="footer-icon">
@@ -152,7 +154,7 @@
         <img src="images/logo/linkedin.svg" alt="LOGO" class="footer-icon">
       </a>
     </div>
-    
+
     <div id="copyright">
       Lv-647-03.Ruby-ZeroWaste © 2023
     </div>
