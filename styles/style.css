@@ -195,7 +195,7 @@ legend {
   animation-duration: 1.5s;
 }
 
-@keyframes navbar {
+/* @keyframes navbar {
 
   0% {position:relative; left:-2000px;}
   99% {position:relative; left:-1px;}
@@ -207,7 +207,7 @@ legend {
   0% {right:-2000px;}
   99% {right:-1px;}
   100% {right:0px;}
-}
+} */
 
 @media screen and (max-width: 1024px) {
   body {
@@ -263,7 +263,7 @@ legend {
   header nav ul li, .dropbtn {
     line-height: 30px;
     display: inline-grid;
-    width: 100%;
+    width: 100vw;
   }
 
   #burger-menu {
