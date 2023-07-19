@@ -88,14 +88,19 @@ header nav ul li :hover {
 
 #logo, #copyright {
   height: 100%;
-  display: block;
+  display: flex;
+  align-items: center;
   position: absolute;
   right: 5px;
   top: 0px;
 }
 
-#logo-img {
+#logo-img-full, #logo-img-short {
   height: inherit;
+}
+
+#logo-img-short {
+  display: none;
 }
 
 .image-content {
@@ -179,7 +184,7 @@ legend {
 }
 
 #logo {
-  animation-name: logo-img;
+  animation-name: logo-img-full;
   animation-duration: 1.5s;
 }
 
@@ -190,9 +195,69 @@ legend {
   100% {left:0px;}
 }
 
-@keyframes logo-img {
+@keyframes logo-img-full {
   
   0% {right:-2000px;}
   99% {right:-1px;}
   100% {right:0px;}
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    width: 80%;
+  }
+
+  fieldset {
+    font-size: 20px;
+  }
+
+  legend {
+    font-size: 30px;
+  }
+
+  .menu-item, .dropbtn {
+    padding: 1vh;
+    font-size: 12px;
+  }
+
+  #logo-img-full {
+    height: 75%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 90%;
+  }
+
+  #logo-img-full {
+    display: none;
+  }
+
+  #logo-img-short {
+    display: block;
+  }
+
+  #footer div {
+    display:block;
+    width: 100%;
+  }
+
+  #copyright {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #logo {
+    display: none;
+  }
+
+  header nav ul li, .dropbtn {
+    line-height: 30px;
+    display: inline-grid;
+    width: 100%;
+  }
+
+
 }
