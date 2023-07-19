@@ -9,14 +9,17 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="styles/style.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="scripts/partials.js"></script>
+
   <title>Frozen target</title>
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <nav>
       <ul id="menu">
-        <li><a href="#" class="menu-item">Main</a></li>
+        <li><a href="index.html" class="menu-item">Main</a></li>
         <li><div class="dropdown">
           <button class="dropbtn">Matches</button>
           <div class="dropdown-content">
@@ -25,19 +28,24 @@
             <a href="#">Ratings</a>
           </div>
         </div>
-        <li><a href="#" class="menu-item">News</a></li>
+        <li><a href="news.html" class="menu-item">News</a></li>
         <li><a href="#" class="menu-item">Fans</a></li>
         <li><a href="#" class="menu-item">Contacts</a></li>
         <li><a href="#" class="menu-item">Admin</a></li>
-
-        <a href="#">
-          <img src="images/logo/logo.svg" alt="LOGO" class="logo">
-        </a>
       </ul>
+
+      <a href="#" id="logo">
+        <img src="images/logo/logo.svg" alt="LOGO" id="logo-img">
+      </a>
+
     </nav>
   </header>
 
-  <main>
+  <div class="background-container">
+    <img class="background-img" src="images/background.jpg">
+  </div>
+
+  <main id="main">
     <div>
       <img src="images/banner.png" alt="banner" id="banner">
     </div>
@@ -68,13 +76,6 @@
         However, the team's greatest success came in the late 2000s and early 2010s. The Ukrainian biathletes
         established themselves as dominant forces on the international stage, consistently challenging traditional
         biathlon powerhouses like Germany and Norway.
-      </p>
-
-      <p>
-        One of the most prominent athletes during this era was Oleksandr Usyk. Known for his exceptional skiing
-        abilities and accurate shooting, Usyk won multiple World Cup titles and was a constant contender in major
-        championships. He also played a pivotal role in the Ukrainian team's relay victories, contributing to their
-        success in team events.
       </p>
 
       <p>
@@ -134,11 +135,11 @@
     </fieldset>
   </main>
 
-  <footer>
+  <footer id="footer">
     <div id="social-media-text">
       <h3>Find us in social networks:</h3>
     </div>
-
+    
     <div>
       <a href="https://github.com/AndriyAndriyovuch">
         <img src="images/logo/github.svg" alt="LOGO" class="footer-icon">
@@ -150,7 +151,7 @@
         <img src="images/logo/linkedin.svg" alt="LOGO" class="footer-icon">
       </a>
     </div>
-
+    
     <div id="copyright">
       Lv-647-03.Ruby-ZeroWaste © 2023
     </div>
