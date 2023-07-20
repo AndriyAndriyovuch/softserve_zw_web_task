@@ -241,7 +241,7 @@ legend {
 
   #logo-img-short {
     display: block;
-    height: 65%;
+    height: 25px;
   }
 
   #footer div {
@@ -271,7 +271,7 @@ legend {
 
   #logo-img-short {
     position: absolute;
-    top: 5px;
+    top: 0px;
     right: 0px;
     height: 30px;
   }
