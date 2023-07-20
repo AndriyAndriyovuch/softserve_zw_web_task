@@ -193,6 +193,25 @@ legend {
   animation-duration: 1.5s;
 }
 
+
+#map, #contact-info {
+  display: inline-block;
+  margin: 0;
+  padding: 5px;
+  height: 300px;
+}
+
+#contact-info {
+  width: 30%;
+  font-size: x-small;
+  
+}
+
+#map {
+  float: right;
+  width: 65%;
+}
+
 @keyframes navbar {
 
   0% {position:relative; left:-2000px;}
