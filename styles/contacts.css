@@ -1,0 +1,16 @@
+#map, #contact-info {
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  height: 80vh;
+}
+
+#contact-info {
+  width: 30%;
+  font-size: medium;
+}
+
+#map {
+  float: right;
+  width: 65%;
+}
