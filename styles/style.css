@@ -25,17 +25,17 @@ body {
 }
 
 main {
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 header, footer {
   background-color: grey;
+  z-index: 1;
 }
 
 header {
   position: sticky;
   top: 0;
-  background-color: grey;
 }
 
 header, footer{
@@ -125,7 +125,7 @@ header nav ul li :hover {
 }
 
 fieldset {
-  font-size: 25px;
+  font-size: 20px;
   border: solid;
   border-color: darkgrey;
   border-radius: 20px;
@@ -137,7 +137,7 @@ legend {
   text-transform: uppercase;
   text-align: center;
   padding: 0 20px;
-  font-size: 40px;
+  font-size: 30px;
   color: darkgrey;
 }
 
@@ -197,19 +197,48 @@ legend {
 #map, #contact-info {
   display: inline-block;
   margin: 0;
-  padding: 5px;
-  height: 300px;
+  padding: 10px;
+  height: 80vh;
 }
 
 #contact-info {
   width: 30%;
-  font-size: x-small;
-  
+  font-size: medium;
+
 }
 
 #map {
   float: right;
   width: 65%;
+}
+
+.album {
+  display: flex;
+}
+
+.gallery {
+  width: 25%;
+  margin: 5px;
+  border: 1px solid #ccc;
+  transition: transform .5s;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.gallery img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
 }
 
 @keyframes navbar {

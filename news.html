@@ -1,218 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="styles/style.css" />
 
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/cba15fe931.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/burger.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://kit.fontawesome.com/cba15fe931.js" crossorigin="anonymous"></script>
-  <script src="scripts/burger.js"></script>
+    <title>Frozen target</title>
+  </head>
 
-  <title>Frozen target</title>
-</head>
+  <body>
+    <header id="header">
+      <nav>
+        <i id="burger-menu" class="fa-solid fa-bars" onclick="showMenu()"></i>
+        <ul id="menu">
+          <li><a href="main.html" class="menu-item">Main</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">Matches</button>
+              <div class="dropdown-content" id="matches">
+                <a href="#">Calendar of matches</a>
+                <a href="#">Next game</a>
+                <a href="#">Ratings</a>
+              </div>
+            </div>
+          </li>
 
-<body>
-  <header id="header">
-    <nav>
-      <i id="burger-menu" class="fa-solid fa-bars" onclick="showMenu()"></i>
-      <ul id="menu">
-        <li><a href="main.html" class="menu-item">Main</a></li>
-        <li><div class="dropdown">
-          <button class="dropbtn">Matches</button>
-          <div class="dropdown-content" id="matches">
-            <a href="#">Calendar of matches</a>
-            <a href="#">Next game</a>
-            <a href="#">Ratings</a>
+          <li><a href="news.html" class="menu-item">News</a></li>
+          <li><a href="fans.html" class="menu-item">Fans</a></li>
+          <li><a href="contacts.html" class="menu-item">Contacts</a></li>
+          <li><a href="admin.html" class="menu-item">Admin</a></li>
+        </ul>
+
+        <a href="#" id="logo">
+          <img src="images/logo/logo.svg" alt="LOGO" id="logo-img-full" />
+          <img
+            src="images/logo/logo-short.svg"
+            alt="LOGO"
+            id="logo-img-short"
+          />
+        </a>
+      </nav>
+    </header>
+
+    <div class="background-container">
+      <img class="background-img" src="images/background.jpg" />
+    </div>
+
+    <main id="main">
+      <div class="album">
+        <div class="gallery">
+          <div class="news-image">
+            <img
+              src="images/news/news_1.jpg"
+              alt="Cinque Terre"
+              height="250"/>
+          </div>          <div class="desc">
+            Leading Ukrainian athletes Yulia Dzyma and Dmytro Pidruchnyi
+            received an invitation to the City Biathlon summer show-race in
+            Wiesbaden, Germany.
           </div>
         </div>
-        <li><a href="news.html" class="menu-item">News</a></li>
-        <li><a href="fans.html" class="menu-item">Fans</a></li>
-        <li><a href="contacts.html" class="menu-item">Contacts</a></li>
-        <li><a href="admin.html" class="menu-item">Admin</a></li>
-      </ul>
 
-      <a href="#" id="logo">
-        <img src="images/logo/logo.svg" alt="LOGO" id="logo-img-full">
-        <img src="images/logo/logo-short.svg" alt="LOGO" id="logo-img-short">
-      </a>
+        <div class="gallery">
+          <div class="news-image">
+            <img
+              src="images/news/news_2.jpg"
+              alt="Cinque Terre"
+              height="250"/>
+          </div>
+          <div class="desc">
+            Ukraine almost guaranteed itself a top 10 in both men's and women's
+            competitions. The penultimate stage of the Biathlon World Cup of the
+            2022 season ended in Östersund, Sweden
+          </div>
+        </div>
 
-    </nav>
-  </header>
+        <div class="gallery">
+          <div class="news-image">
+            <img
+              src="images/news/news_3.jpg"
+              alt="Cinque Terre"
+              height="250"/>
+          </div>
+          <div class="desc">
+            Ukraine dramatically lost a chance for a medal in the mixed relay at the Biathlon World Cup in Nove Mesto
+          </div>
+        </div>
 
-  <div class="background-container">
-    <img class="background-img" src="images/background.jpg">
-  </div>
+        <div class="gallery">
+          <div class="news-image">
+            <img
+              src="images/news/news_4.jpg"
+              alt="Cinque Terre"
+              height="250"/>
+          </div>          <div class="desc">
+            The first winner of the spring part of the Ukrainian biathlon championship, which started today in Bukovel, was Dmytro Pidruchny.
+          </div>
+        </div>
+      </div>
+      <fieldset>
+        <legend>
+          Team Ukraine: preparing for a new season against all odds
+        </legend>
+        <img
+          src="https://assets.biathlonworld.com/image/upload/f_auto,c_limit,w_1080,q_auto/Website%20Stories/Team_Ukraine_Oberhof"
+          alt="team"
+          class="image-content"
+        />
+        <p>
+          <strong>
+            The preparations of the national teams for the new season 2022/2023
+            are in full swing. But no team faces a greater challenge that the
+            Ukrainian athletes, who have to solve many different problems
+            related to the participation of the squad in international
+            competitions.
+          </strong>
+        </p>
 
-  <main id="main">
-    <div class="gallery">
-      <a target="_blank" href="img_5terre.jpg">
-        <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
-    
-    <div class="gallery">
-      <a target="_blank" href="img_forest.jpg">
-        <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
-    
-    <div class="gallery">
-      <a target="_blank" href="img_lights.jpg">
-        <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
-    
-    <div class="gallery">
-      <a target="_blank" href="img_mountains.jpg">
-        <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-      </a>
-      <div class="desc">Add a description of the image here</div>
-    </div>
-    <fieldset>
-      <legend>Team Ukraine: preparing for a new season against all odds</legend>
-      <img
-        src="https://assets.biathlonworld.com/image/upload/f_auto,c_limit,w_1080,q_auto/Website%20Stories/Team_Ukraine_Oberhof"
-        alt="team" class="image-content">
-      <p>
-        <strong>
-          The preparations of the national teams for the new season 2022/2023 are in full swing. But no team faces a
-          greater challenge that the Ukrainian athletes, who have to solve many different problems related to the
-          participation of the squad in international competitions.
-        </strong>
-      </p>
+        <p>
+          Six biathletes of the national team: Dmytro Pidruchnyi, Artem Pryma,
+          Bogdan Tsymbal, Anton Dudchenko, Taras Lesiuk, Denys Nasyko, and Darya
+          Blashko, who also works with her male teammates, are having their
+          second training camp in Oberhof. The first camp was held in Ukrainian
+          Sianky (Lviv region), where the men’s head coach Juraj Sanitra managed
+          to gather the main team: “For me, first of all, it was important to
+          look into the eyes of my athletes, to understand how they look at the
+          situation and what they think."
+        </p>
 
-      <p>
-        Six biathletes of the national team: Dmytro Pidruchnyi, Artem Pryma, Bogdan Tsymbal, Anton Dudchenko, Taras
-        Lesiuk, Denys Nasyko, and Darya Blashko, who also works with her male teammates, are having their second
-        training camp in Oberhof. The first camp was held in Ukrainian Sianky (Lviv region), where the men’s head coach
-        Juraj Sanitra managed to gather the main team: “For me, first of all, it was important to look into the eyes of
-        my athletes, to understand how they look at the situation and what they think."
-      </p>
+        <p>
+          Sanitra, who has been working with the Ukrainian team for 6 years,
+          recalls how unexpectedly the last season was interrupted after
+          Beijing: “When everyone went home after the Olympics on February 21,
+          no one thought that we would not go to the last trimester of the World
+          Cup. Back then we already had planned on how to start working for the
+          next Olympic cycle. But that all changed on February 24, when Russia's
+          aggression against Ukraine began."
+        </p>
 
-      <p>
-        Sanitra, who has been working with the Ukrainian team for 6 years, recalls how unexpectedly the last season was
-        interrupted after Beijing: “When everyone went home after the Olympics on February 21, no one thought that we
-        would not go to the last trimester of the World Cup. Back then we already had planned on how to start working
-        for the next Olympic cycle. But that all changed on February 24, when Russia's aggression against Ukraine
-        began."
-      </p>
+        <img
+          src="https://assets.biathlonworld.com/image/upload/f_auto,c_limit,w_1080,q_auto/Photo%20Database/2021-2022/OWG%20Beijing%202022/Men%20Relay/Tsymbal150222cm2643"
+          alt="biathlonist-1"
+          class="image-content"
+        />
+        <p>
+          The coach recalls: "In those days there was all sorts of information
+          and phone conversations, I was very worried about all the athletes and
+          coaches, as well as fans, which there are so many in Ukraine. I helped
+          in any way I could. For five weeks, my athlete's family lived at my
+          house... This is a very difficult time, and I thought for a long time
+          about whether to continue working or not. I talked to my family and
+          realised that I can’t leave my athletes, Ukrainian biathlon, and
+          colleagues at a time when they need help.”
+        </p>
 
-      <img
-        src="https://assets.biathlonworld.com/image/upload/f_auto,c_limit,w_1080,q_auto/Photo%20Database/2021-2022/OWG%20Beijing%202022/Men%20Relay/Tsymbal150222cm2643"
-        alt="biathlonist-1" class="image-content">
-      <p>
-        The coach recalls: "In those days there was all sorts of information and phone conversations, I was very worried
-        about all the athletes and coaches, as well as fans, which there are so many in Ukraine. I helped in any way I
-        could. For five weeks, my athlete's family lived at my house... This is a very difficult time, and I thought for
-        a long time about whether to continue working or not. I talked to my family and realised that I can’t leave my
-        athletes, Ukrainian biathlon, and colleagues at a time when they need help.”
-      </p>
+        <p>
+          Sanitra does not know what will happen tomorrow, but he is sure that
+          biathlon has existed and will exist in Ukraine, so he continues to
+          work persistently.
+        </p>
 
-      <p>
-        Sanitra does not know what will happen tomorrow, but he is sure that biathlon has existed and will exist in
-        Ukraine, so he continues to work persistently.
-      </p>
+        <p>
+          In order to come to Germany for a training camp, it was necessary to
+          solve one main issue: obtaining permission that would allow biathletes
+          to leave Ukraine. The country is at war and many of the athletes were
+          in service either in the Armed Forces of Ukraine (AFU) or in the
+          National Guard: “We were constantly in touch and together we thought
+          about how to work further, - the coach says. I know that almost right
+          after Beijing, the guys were called up to perform army tasks.
+        </p>
 
-      <p>
-        In order to come to Germany for a training camp, it was necessary to solve one main issue: obtaining permission
-        that would allow biathletes to leave Ukraine. The country is at war and many of the athletes were in service
-        either in the Armed Forces of Ukraine (AFU) or in the National Guard: “We were constantly in touch and together
-        we thought about how to work further, - the coach says. I know that almost right after Beijing, the guys were
-        called up to perform army tasks.
-      </p>
+        <p>
+          Of course, you can feel a shortage in training, but I can see in their
+          eyes that they are ready to do the hardest training work to be well
+          prepared. After all, this is their opportunity to show that Ukraine is
+          a strong country and can have its own position in the world. And sport
+          is a good form of presenting your country in the world.”
+        </p>
 
-      <p>
-        Of course, you can feel a shortage in training, but I can see in their eyes that they are ready to do the
-        hardest training work to be well prepared. After all, this is their opportunity to show that Ukraine is a strong
-        country and can have its own position in the world. And sport is a good form of presenting your country in the
-        world.”
-      </p>
+        <img
+          src="https://assets.biathlonworld.com/image/upload/f_auto,c_limit,w_1080,q_auto/Website%20Stories/Sanitra_in_Oberhof"
+          alt="trainer"
+          class="image-content"
+        />
+        <p>
+          When Sanitra decided to work with the Ukrainian team, first he thought
+          about the moral state of his athletes; he worried that some personal
+          problems might interfere because everyone has families and relatives
+          in Ukraine, and no one knows what can happen at any moment. The main
+          task he faces today is to fill in the gaps in the training of all team
+          members who have not had the opportunity to train for almost two
+          months: “Ukrainian top biathletes are now in different stages of
+          preparation for the season. We did a very good job in terms of volume
+          and quantity in the previous Olympic cycle. And I think that we will
+          manage to do everything if we work according to the programme that we
+          have for the summer period; it will help to raise the guys to a good
+          level.”
+        </p>
 
-      <img
-        src="https://assets.biathlonworld.com/image/upload/f_auto,c_limit,w_1080,q_auto/Website%20Stories/Sanitra_in_Oberhof"
-        alt="trainer" class="image-content">
-      <p>
-        When Sanitra decided to work with the Ukrainian team, first he thought about the moral state of his athletes; he
-        worried that some personal problems might interfere because everyone has families and relatives in Ukraine, and
-        no one knows what can happen at any moment. The main task he faces today is to fill in the gaps in the training
-        of all team members who have not had the opportunity to train for almost two months: “Ukrainian top biathletes
-        are now in different stages of preparation for the season. We did a very good job in terms of volume and
-        quantity in the previous Olympic cycle. And I think that we will manage to do everything if we work according to
-        the programme that we have for the summer period; it will help to raise the guys to a good level.”
-      </p>
+        <p>
+          The captain of the Ukrainian national team, Dmytro Pidruchnyi, who
+          served in the National Guard almost from the beginning of Russia’s
+          aggression against Ukraine, is also concerned about his shape: “Once a
+          week I was allowed to go home, and I was running so that at least for
+          an hour my heart and muscles would remember what a load is. I also got
+          sick with covid, so I started to train only in mid-May, and the first
+          training sessions were very difficult. However, step by step, we are
+          now trying to restore the form to return to the previous level. I feel
+          that my shape is a month or month and a half “behind” from the one I
+          usually had during this period. But I have already begun to feel the
+          rhythm and I’m starting to catch up on the guys."
+        </p>
 
-      <p>
-        The captain of the Ukrainian national team, Dmytro Pidruchnyi, who served in the National Guard almost from the
-        beginning of Russia’s aggression against Ukraine, is also concerned about his shape: “Once a week I was allowed
-        to go home, and I was running so that at least for an hour my heart and muscles would remember what a load is. I
-        also got sick with covid, so I started to train only in mid-May, and the first training sessions were very
-        difficult. However, step by step, we are now trying to restore the form to return to the previous level. I feel
-        that my shape is a month or month and a half “behind” from the one I usually had during this period. But I have
-        already begun to feel the rhythm and I’m starting to catch up on the guys."
-      </p>
+        <img
+          src="https://assets.biathlonworld.com/image/upload/f_auto,c_limit,w_1080,q_auto/Website%20Stories/Lesiuk_Pidruchnyi_in_Oberhof"
+          alt="team-players"
+          class="image-content"
+        />
+        <p>
+          Pidruchnyi admits that the situation in Ukraine affects him a lot: "Of
+          course, everything that happens at home cannot but affect the mood and
+          mindset; it is difficult to separate yourself from the country. You
+          know there is a war going on and people are dying, that the AFU stands
+          as a wall, giving us the opportunity to train here as well. But you go
+          to training and think about what you need to do now, you focus all
+          your attention here”.
+        </p>
 
-      <img
-        src="https://assets.biathlonworld.com/image/upload/f_auto,c_limit,w_1080,q_auto/Website%20Stories/Lesiuk_Pidruchnyi_in_Oberhof"
-        alt="team-players" class="image-content">
-      <p>
-        Pidruchnyi admits that the situation in Ukraine affects him a lot: "Of course, everything that happens at home
-        cannot but affect the mood and mindset; it is difficult to separate yourself from the country. You know there is
-        a war going on and people are dying, that the AFU stands as a wall, giving us the opportunity to train here as
-        well. But you go to training and think about what you need to do now, you focus all your attention here”.
-      </p>
+        <p>
+          Artem Pryma, for whom the last season ended early and unexpectedly,
+          was on service in the AFU during this time: “Three days after our
+          return home from the Olympics, the war began and there could no longer
+          be any training. I tried to somehow keep in shape, but I was in my
+          military unit. And I was allowed to go to the first training camp
+          already from there.”
+        </p>
 
-      <p>
-        Artem Pryma, for whom the last season ended early and unexpectedly, was on service in the AFU during this time:
-        “Three days after our return home from the Olympics, the war began and there could no longer be any training. I
-        tried to somehow keep in shape, but I was in my military unit. And I was allowed to go to the first training
-        camp already from there.”
-      </p>
+        <img
+          src="https://assets.biathlonworld.com/image/upload/f_auto,c_limit,w_1080,q_auto/Photo%20Database/2018-2019/WCH%20Oestersund/Men%20Pursuit/Pidruchnyi100319et10024"
+          alt="biathlonist-2"
+          class="image-content"
+        />
+        <p>
+          “All this hard work that we do, - says Sanitra, - we dedicate this to
+          our fans and all citizens of the country so that in such a difficult
+          time they can find some joy in the success of Ukrainian biathletes,
+          because biathlon is one of the most popular sports in Ukraine. I want
+          people to look at the representatives of their country and be happy
+          for their success.”
+        </p>
 
-      <img
-        src="https://assets.biathlonworld.com/image/upload/f_auto,c_limit,w_1080,q_auto/Photo%20Database/2018-2019/WCH%20Oestersund/Men%20Pursuit/Pidruchnyi100319et10024"
-        alt="biathlonist-2" class="image-content">
-      <p>
-        “All this hard work that we do, - says Sanitra, - we dedicate this to our fans and all citizens of the country
-        so that in such a difficult time they can find some joy in the success of Ukrainian biathletes, because biathlon
-        is one of the most popular sports in Ukraine. I want people to look at the representatives of their country and
-        be happy for their success.”
-      </p>
+        <p>Photos: IBU Photopool, Mariya Osolodkina</p>
+      </fieldset>
+    </main>
 
-      <p>
-        Photos: IBU Photopool, Mariya Osolodkina
-      </p>
-    </fieldset>
-  </main>
+    <footer id="footer">
+      <div id="social-media-text">
+        <h3>Find us in social networks:</h3>
+      </div>
 
-  <footer id="footer">
-    <div id="social-media-text">
-      <h3>Find us in social networks:</h3>
-    </div>
+      <div>
+        <a href="https://github.com/AndriyAndriyovuch">
+          <img src="images/logo/github.svg" alt="LOGO" class="footer-icon" />
+        </a>
+        <a href="https://gitlab.com/AndriyAndriyovuch">
+          <img src="images/logo/gitlab.svg" alt="LOGO" class="footer-icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/andrii-mazurok-34929a224/">
+          <img src="images/logo/linkedin.svg" alt="LOGO" class="footer-icon" />
+        </a>
+      </div>
 
-    <div>
-      <a href="https://github.com/AndriyAndriyovuch">
-        <img src="images/logo/github.svg" alt="LOGO" class="footer-icon">
-      </a>
-      <a href="https://gitlab.com/AndriyAndriyovuch">
-        <img src="images/logo/gitlab.svg" alt="LOGO" class="footer-icon">
-      </a>
-      <a href="https://www.linkedin.com/in/andrii-mazurok-34929a224/">
-        <img src="images/logo/linkedin.svg" alt="LOGO" class="footer-icon">
-      </a>
-    </div>
-
-    <div id="copyright">
-      Lv-647-03.Ruby-ZeroWaste © 2023
-    </div>
-  </footer>
-</body>
-
+      <div id="copyright">Lv-647-03.Ruby-ZeroWaste © 2023</div>
+    </footer>
+  </body>
 </html>
