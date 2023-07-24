@@ -12,6 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/cba15fe931.js" crossorigin="anonymous"></script>
   <script src="scripts/burger.js"></script>
+  <script src="scripts/appeal.js"></script>
 
   <title>Frozen target</title>
 </head>
@@ -22,14 +23,15 @@
       <i id="burger-menu" class="fa-solid fa-bars" onclick="showMenu()"></i>
       <ul id="menu">
         <li><a href="main.html" class="menu-item">Main</a></li>
-        <li><div class="dropdown">
-          <button class="dropbtn">Matches</button>
-          <div class="dropdown-content" id="matches">
-            <a href="#">Calendar of matches</a>
-            <a href="#">Next game</a>
-            <a href="#">Ratings</a>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">Matches</button>
+            <div class="dropdown-content" id="matches">
+              <a href="#">Calendar of matches</a>
+              <a href="#">Next game</a>
+              <a href="#">Ratings</a>
+            </div>
           </div>
-        </div>
         <li><a href="news.html" class="menu-item">News</a></li>
         <li><a href="fans.html" class="menu-item">Fans</a></li>
         <li><a href="contacts.html" class="menu-item">Contacts</a></li>
@@ -49,6 +51,47 @@
   </div>
 
   <main id="main">
+    <h1 class="page-title">Fan appeal</h1>
+
+    <div id="appeal-container">
+      <div class="appeal">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Amet luctus venenatis lectus magna fringilla urna porttitor. Enim sed faucibus turpis in.
+          Faucibus turpis in eu mi. Egestas tellus rutrum tellus pellentesque eu tincidunt.
+        </p>
+
+        <div class="appeal-info">
+          <span class="appeal-date">17.06.2023,15:26</span>
+          <span class="username">Darth Vader</span>
+          <span class="appeal-avatar"><img src="https://randomuser.me/api/portraits/lego/1.jpg" alt="avatar" class="avatar-img">
+          </span>
+        </div>
+
+        <hr>
+      </div>
+
+      <div class="appeal">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Amet luctus venenatis lectus magna fringilla urna porttitor. Enim sed faucibus turpis in.
+          Faucibus turpis in eu mi. Egestas tellus rutrum tellus pellentesque eu tincidunt.
+        </p>
+
+        <div class="appeal-info">
+          <span class="appeal-date">02.06.2023, 12:03</span>
+          <span class="username">Anakin Skywalker</span>
+          <span class="appeal-avatar"><img src="https://randomuser.me/api/portraits/lego/3.jpg" alt="avatar" class="avatar-img">
+          </span>
+        </div>
+        <hr>
+      </div>
+    </div>
+    
+    <div id="appeal-form">
+      <textarea name="appeal" id="appeal-text" cols="50" rows="10"></textarea>
+      <button id="appeal-submit" onclick="addAppeal()">Send</button>
+    </div>
 
   </main>
 
