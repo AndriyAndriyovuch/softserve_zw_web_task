@@ -91,6 +91,10 @@ legend {
 }
 
 @media screen and (max-width: 768px) {
+  .gallery {
+    width: 45%;
+  }
+
   body {
     width: 90%;
   }
@@ -104,14 +108,13 @@ legend {
     height: 25px;
   }
 
-  #footer div {
-    display:block;
-    width: 100%;
+  #copyright {
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  #copyright {
-    position: static;
-  }
+  #social-media-links {
+    margin-right: 0;
 }
 
 @media screen and (max-width: 480px) {
@@ -157,5 +160,22 @@ legend {
 
   .dropdown:hover .dropbtn {
     transition: background-color 500ms
+  }
+
+  .gallery {
+    width: 95%;
+  }
+
+  #social-media-text, #social-media-links, #copyright {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .appeal-avatar, .username {
+    width: 40%;
+  }
+
+  .appeal-date {
+    width: 100%;
   }
 }

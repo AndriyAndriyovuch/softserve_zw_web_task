@@ -8,10 +8,10 @@
 
 .appeal-info {
   display: flex;
+  flex-wrap: wrap;
   height: 50px;
   align-items: center;
 }
-
 
 .avatar-img {
   width: 32px;

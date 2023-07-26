@@ -10,8 +10,12 @@ header {
 }
 
 footer {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   bottom: 0;
+  justify-content: space-between;
+  margin: auto;
 }
 
 /* Menu */
@@ -85,6 +89,7 @@ header nav ul li :hover {
 /* Images & icons */
 
 #logo {
+  position: absolute;
   animation-name: logo-img-full;
   animation-duration: 1.5s;
 }
@@ -93,7 +98,6 @@ header nav ul li :hover {
   height: 100%;
   display: flex;
   align-items: center;
-  position: absolute;
   right: 5px;
   top: 0px;
 }
@@ -112,7 +116,14 @@ header nav ul li :hover {
 }
 
 #social-media-text {
+  display: flex;
+  align-items: center;
   margin: 0 15px;
+}
+
+
+#social-media-links {
+  margin-right: auto;
 }
 
 /* Animations */
