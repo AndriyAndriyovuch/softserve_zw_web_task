@@ -2,25 +2,35 @@ function addAppeal() {
   const appealContainer = document.querySelector("#appeal-container")
   const content = document.querySelector("#appeal-text")
 
-  const newAppeal = document.createElement("div")
-  newAppeal.className = "appeal"
-  newAppeal.innerHTML = `
-  <p>
-    ${content.value}
-  </p>
 
-  <div class="appeal-info">
-    <span class="appeal-date">${getCurrentTime()}</span>
-    <span class="username">user_${randomNumber(1215, 99999)}</span>
-    <span class="appeal-avatar"><img src="https://randomuser.me/api/portraits/lego/${randomNumber(1,8)}.jpg" alt="avatar" class="avatar-img">
-    </span>
-  </div>
+  if (content.value.trim() === "") {
+    cuteAlert({
+      type: "error",
+      title: "Error",
+      message: "Appeal can't be empty",
+      buttonText: "Got it"
+    })
+  } else {
+    const newAppeal = document.createElement("div")
 
-  <hr>
-  `
-  
-  appealContainer.insertBefore(newAppeal, appealContainer.firstChild)
-  content.value = ""
+    newAppeal.className = "appeal"
+    newAppeal.innerHTML = `
+    <p>
+      ${content.value}
+    </p>
+
+    <div class="appeal-info">
+      <span class="appeal-date">${getCurrentTime()}</span>
+      <span class="username">user_${randomNumber(1215, 99999)}</span>
+      <span class="appeal-avatar"><img src="https://randomuser.me/api/portraits/lego/${randomNumber(1,8)}.jpg" alt="avatar" class="avatar-img">
+      </span>
+    </div>
+
+    <hr>
+    `
+    appealContainer.insertBefore(newAppeal, appealContainer.firstChild)
+    content.value = ""
+  }
 }
 
 

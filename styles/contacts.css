@@ -1,16 +1,23 @@
-#map, #contact-info {
-  display: inline-block;
+#contact-block {
+  display: flex;
   margin: 0;
   padding: 10px;
   height: 80vh;
+  justify-content: space-around;
+}
+#contact-info, #map {
+  display: flex;
 }
 
 #contact-info {
-  width: 30%;
+  width: 500px;
+}
+
+#contact-info fieldset {
   font-size: medium;
 }
 
 #map {
   float: right;
-  width: 65%;
+  width: 900px;
 }

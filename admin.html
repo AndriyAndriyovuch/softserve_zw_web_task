@@ -12,6 +12,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/cba15fe931.js" crossorigin="anonymous"></script>
   <script src="scripts/burger.js"></script>
+  <script src="scripts/admin.js"></script>
+  <script src="scripts/cute-alert.js"></script>
 
   <title>Frozen target</title>
 </head>
@@ -49,7 +51,30 @@
   </div>
 
   <main id="main">
+    <h1 class="page-title">Add news</h1>
+    <form id="news-form" onsubmit="event.preventDefault();">
+      <div class="add-news-container">
+        <div id="news-image-container">
+          <img id="news-image" src="images/news/placeholder.svg" alt="img">
+        </div>
 
+        <div>
+          <label for="newsImage" id="btn-image-selector" class="btn-grey"> Select Image</label>
+          <input type="file" id="newsImage" name="newsImage" onchange="readURL(this);">
+        </div>
+      </div>
+
+      <div class="add-news-container">
+        <div id="news-body-container">
+          <input type="text" name="news-title" id="news-title" placeholder="News title">
+          <textarea name="news-body" id="news-body" rows="10" placeholder="News text"></textarea>
+        </div>
+
+        <div>
+          <button class="btn-grey" id="btn-submit" value="Add news" onclick="submitMyForm()">Add News</button>
+        </div>
+      </div>
+    </form>
   </main>
 
   <footer id="footer">
