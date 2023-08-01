@@ -1,0 +1,23 @@
+#contact-block {
+  display: flex;
+  margin: 0;
+  padding: 10px;
+  height: 80vh;
+  justify-content: space-around;
+}
+#contact-info, #map {
+  display: flex;
+}
+
+#contact-info {
+  width: 500px;
+}
+
+#contact-info fieldset {
+  font-size: medium;
+}
+
+#map {
+  float: right;
+  width: 900px;
+}

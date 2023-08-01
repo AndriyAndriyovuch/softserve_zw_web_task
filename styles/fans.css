@@ -1,0 +1,43 @@
+.appeal-container {
+}
+
+.appeal, #appeal-form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.appeal-info {
+  display: flex;
+  flex-wrap: wrap;
+  height: 50px;
+  align-items: center;
+}
+
+.avatar-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.username {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+#appeal-form {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#appeal-text {
+  resize: none;
+}
+
+#appeal-submit {
+  float: right;
+  width: 70px;
+  height: 25px;
+  border-radius: 5px;
+  border-style: solid;
+}
